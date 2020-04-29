@@ -9,7 +9,7 @@ const AirbenderCharacters = () => {
   useEffect(() => {
     fetchCharacters()
       .then(characters => setCharacters(characters));
-  });
+  }, []);
 
   return (
     <>

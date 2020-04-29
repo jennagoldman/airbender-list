@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Characters = ({ characters }) => {
   const characterItems = characters.map(character => (
-    <li key={character.id}>
+    <li key={character._id}>
       <Character {...character} />
     </li>
   ));
@@ -18,9 +18,9 @@ const Characters = ({ characters }) => {
 
 Characters.propTypes = {
   characters: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    _id: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    photoUrl: PropTypes.string.isRequired,
     allies: PropTypes.string.isRequired,
     enemies: PropTypes.string.isRequired,
     affiliation: PropTypes.string.isRequired

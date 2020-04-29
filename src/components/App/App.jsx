@@ -1,6 +1,21 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+import Header from '../Header/Header.jsx';
+import AirbenderCharacters from '../../containers/AirbenderCharacters/AirbenderCharacter.jsx';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <Header />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={AirbenderCharacters} />
+        </Switch>
+      </Router>
+    </>
+  );
 }
-  

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CharacterList from '../../components/CharacterList/CharacterList.jsx';
+import Characters from '../../components/Characters/Characters.jsx';
 
 const AirbenderCharacters = () => {
   const [characters, setCharacters] = useState([]);
@@ -8,7 +8,7 @@ const AirbenderCharacters = () => {
 
   return (
     <>
-      <CharacterList characters={characters} />
+      <Characters characters={characters} />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Characters from '../../components/Characters/Characters.jsx';
+import { fetchCharacters } from '../../services/airbender-api.js';
 
 const AirbenderCharacters = () => {
   const [characters, setCharacters] = useState([]);

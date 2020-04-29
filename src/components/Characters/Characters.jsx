@@ -1,5 +1,6 @@
 import React from 'react';
 import Character from './Character.jsx';
+import PropTypes from 'prop-types';
 
 const Characters = ({ characters }) => {
   const characterItems = characters.map(character => (

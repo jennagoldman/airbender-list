@@ -10,8 +10,8 @@ import AirbenderCharacters from '../../containers/AirbenderCharacters/AirbenderC
 export default function App() {
   return (
     <>
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/" component={AirbenderCharacters} />
         </Switch>

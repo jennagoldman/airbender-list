@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import Header from '../Header/Header.jsx';
 import AirbenderCharacters from '../../containers/AirbenderCharacters/AirbenderCharacter.jsx';
-import CharacterDetail from '../../containers/CharacterDetail/CharacterDetail.jsx';
+import CharacterDetailContainer from '../../containers/CharacterDetail/CharacterDetailContainer.jsx';
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={AirbenderCharacters} />
-          <Route path="/character/:id" component={CharacterDetail} />
+          <Route path="/character/:id" component={CharacterDetailContainer} />
         </Switch>
       </Router>
     </>

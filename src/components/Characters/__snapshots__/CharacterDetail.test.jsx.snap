@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CharacterDetail matches a snapshot 1`] = `
+<div
+  className="characterDetail"
+>
+  <p
+    className="characterName"
+  >
+    Momo
+  </p>
+  <img
+    alt="Momo"
+    src="https://vignette.wikia.nocookie.net/avatar/images/4/43/Inquisitive_Momo.png/revision/latest?cb=20081225191217"
+  />
+  <p>
+    <i
+      className="fas fa-users"
+    />
+     
+     
+  </p>
+  <p>
+    <span>
+      <i
+        className="fas fa-hands-helping"
+      />
+       
+      Aang
+       | 
+    </span>
+    <span>
+      <i
+        className="fas fa-fist-raised"
+      />
+       
+      Zuko
+    </span>
+  </p>
+</div>
+`;

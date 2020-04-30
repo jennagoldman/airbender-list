@@ -6,7 +6,7 @@ import styles from './Characters.css';
 
 const Characters = ({ characters }) => {
   const characterItems = characters.map(character => (
-    <li key={character.id}>
+    <li key={character.id} className={styles.characterItem}>
       <Link to={`/character/${character.id}`}>
         <Character {...character} />
       </Link>
@@ -14,7 +14,7 @@ const Characters = ({ characters }) => {
   ));
 
   return (
-    <ul>
+    <ul className={styles.characterList}>
       {characterItems}
     </ul>
   );

@@ -1,12 +1,17 @@
-ul {
+.characterList {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
 }
 
-li {
+.characterItem {
   display: inline-block;
   margin: 20px;
   text-align: center;
   vertical-align: middle
+}
+
+.characterItem a {
+  color: #ff7050;
+  text-shadow: 1px 1px #000;
 }

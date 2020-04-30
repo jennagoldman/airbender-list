@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { fetchCharacter } from '../../services/airbender-api.js';
 import { useRouteMatch } from 'react-router-dom';
+import styles from './CharacterDetail.css';
 
 const CharacterDetail = () => {
   const [character, setCharacter] = useState({});
@@ -14,10 +14,10 @@ const CharacterDetail = () => {
   }, []);
 
   return (
-    <div>
-      <p>{character.name}</p>
+    <div className={styles.characterDetail}>
+      <p className={styles.characterName}>{character.name}</p>
       <img src={character.photoUrl} alt={character.name} />
-      <p>{character.affiliation}</p>
+      <p><i className="fas fa-users"></i> {character.affiliation} </p>
       <p>
         <span><i className="fas fa-hands-helping"></i> {character.allies} | </span>
         <span><i className="fas fa-fist-raised"></i> {character.enemies}</span>
@@ -25,15 +25,5 @@ const CharacterDetail = () => {
     </div>
   );
 };
-
-
-CharacterDetail.propTypes = {
-  name: PropTypes.string.isRequired,
-  photoUrl: PropTypes.string,
-  allies: PropTypes.array.isRequired,
-  enemies: PropTypes.array.isRequired,
-  affiliation: PropTypes.string
-};
-
 
 export default CharacterDetail;

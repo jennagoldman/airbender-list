@@ -1,0 +1,24 @@
+.characterDetail {
+  background: #fff;
+  width: 400px;
+  height: 450px;
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px #000;
+  margin: 0 auto;
+}
+
+.characterDetail img {
+  width: 80%;
+  max-height: 250px;
+}
+
+.characterName {
+  color: #ff7050;
+  font-family: 'Lemonada', sans-serif;
+  text-shadow: 1px 1px #000;
+}
+
+i {
+  color: #ff7050
+}

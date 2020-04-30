@@ -1,5 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #FF7F50;
+  background-image: url('/public/fire_water_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   font-family: sans-serif;
   text-align: center;
 }
@@ -9,7 +16,7 @@ a {
 }
 
 h1 {
-  color: #000;
+  color: #FF7F50;
   text-shadow: 2px 2px #FFF;
   text-align: center;
   font-size: 48px;

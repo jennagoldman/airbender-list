@@ -2,26 +2,23 @@
   font-family: 'Lemonada', sans-serif;
 }
 
-li div {
+.characterDiv {
   background: #fff;
   width: 300px;
-  height: 300px;
+  height: 375px;
   padding: 25px 10px;
   border-radius: 15px;
   box-shadow: 10px 10px #000;
 }
 
-li div p {
-  margin: 10px;
-  font-size: 24px;
+.characterName {
+  margin: 5px;
+  font-size: 20px;
 }
 
-li a {
-  color: coral;
-  text-shadow: 1px 1px #000;
-}
 
-li div img {
+
+.characterDiv img {
   width: 250px;
   height: 250px;
   border-radius: 10px;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Characters matches a snapshot 1`] = `
+<ul
+  className="characterList"
+>
+  <li
+    className="characterItem"
+    key="1"
+  >
+    <Link
+      to="/character/1"
+    >
+      <Character
+        id="1"
+        imageUrl="https://vignette.wikia.nocookie.net/avatar/images/4/43/Inquisitive_Momo.png/revision/latest?cb=20081225191217"
+        name="Momo"
+      />
+    </Link>
+  </li>
+</ul>
+`;

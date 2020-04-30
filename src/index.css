@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('/public/fire_water_bg.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #FF7F50;
+  text-shadow: 2px 2px #FFF;
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Lemonada', sans-serif;
+}

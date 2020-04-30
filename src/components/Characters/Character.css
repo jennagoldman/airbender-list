@@ -1,0 +1,25 @@
+.characterName {
+  font-family: 'Lemonada', sans-serif;
+}
+
+.characterDiv {
+  background: #fff;
+  width: 300px;
+  height: 375px;
+  padding: 25px 10px;
+  border-radius: 15px;
+  box-shadow: 10px 10px #000;
+}
+
+.characterName {
+  margin: 5px;
+  font-size: 20px;
+}
+
+
+
+.characterDiv img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}

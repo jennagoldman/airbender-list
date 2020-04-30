@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches a snapshot 1`] = `
+<header
+  className="headerClass"
+>
+  <Link
+    to="/"
+  >
+    <h1>
+      Avatar: The Last Airbender Characters
+    </h1>
+  </Link>
+</header>
+`;

@@ -15,7 +15,7 @@ export default function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={AirbenderCharacters} />
-          <Route exact path="/character/:id" component={CharacterDetail} />
+          <Route path="/character/:id" component={CharacterDetail} />
         </Switch>
       </Router>
     </>

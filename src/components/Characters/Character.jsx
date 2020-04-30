@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Character.css';
 
-const Character = ({ name, photoUrl }) => (
+const Character = ({ name, imageUrl }) => (
   <div>
-    <p>{name}</p>
-    <img src={photoUrl} alt={name} />
+    <p className={styles.characterName}>{name}</p>
+    <img src={imageUrl} alt={name} />
   </div>
 );
 
 Character.propTypes = {
   name: PropTypes.string.isRequired,
-  photoUrl: PropTypes.string,
+  imageUrl: PropTypes.string,
 };
 
 

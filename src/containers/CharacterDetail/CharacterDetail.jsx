@@ -8,11 +8,10 @@ const CharacterDetail = () => {
 
   const match = useRouteMatch('/character/:id');
 
-
   useEffect(() => {
     fetchCharacter(match.params.id)
       .then(character => setCharacter(character));
-  });
+  }, []);
 
   return (
     <div>
@@ -20,8 +19,8 @@ const CharacterDetail = () => {
       <img src={character.photoUrl} alt={character.name} />
       <p>{character.affiliation}</p>
       <p>
-        <span>{character.allies}</span>
-        <span>{character.enemies}</span>
+        <span><i className="fas fa-hands-helping"></i> {character.allies} | </span>
+        <span><i className="fas fa-fist-raised"></i> {character.enemies}</span>
       </p>
     </div>
   );
